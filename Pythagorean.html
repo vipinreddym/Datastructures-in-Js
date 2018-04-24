@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Pythagorean</title>
+</head>
+<body>
+
+<script>
+function Pythagorean() {
+    var a = 1, b = a + 1, c,x;
+
+
+    while ( a < 1000 ) {
+        while ( b < 1000 && b > a ) {
+            c = 1000 - a - b;
+            console.log(c);
+            if ( c < b ) {
+                break;
+            }
+
+            //  if ( Math.pow(a, 2) + Math.pow(b, 2) === Math.pow(c, 2) ) 
+            if(check(a,b,c))
+            
+            {
+                x=+parseInt(a)+parseInt(b)+parseInt(c);
+                document.write("a value is:" +a+ "<br>");
+                document.write("b value is:"+b+"<br>");
+                document.write("c value is:"+c+"<br>");
+                document.write("the sum is :" +x+"<br>");
+                document.write("product of abc :"+ (a * b * c));
+            }
+            b++;
+            console.log("intial b value"+b);
+           
+            }
+            a++;
+        console.log("intial a value"+a);
+        b = a + 1;
+        console.log("second b value"+b);
+        }
+      
+    }
+    function check(x,y,z){
+                return power(x)+power(y)===power(z);
+    }
+    function power(l){
+       return l*l;
+    }
+
+Pythagorean();
+
+</script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Binary search</title>
+</head>
+<body>
+    <script>
+    var a,b,max;
+    var myarry = [];
+    
+    
+    a = prompt("enter length of an array");
+ 
+  
+    for (var i=0;i<a;i++)
+    {
+       b= prompt("enter elements")
+        myarry.push(b);
+     
+    } 
+    document.write("array elements"+myarry+"<br>");
+    max=myarry[0];
+
+   for(i=1;i<b;i++){
+   if(myarry[i]>max){
+   max=myarry[i];    
+   
+   }
+   }
+   document.write("maximum number is:" + "<br>" + max);
+ 
+        
+        
+        
+     </script>
+
+    
+</body>
+</html>

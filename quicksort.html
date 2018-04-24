@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>quick-sort</title>
+</head>
+<body>  
+    
+    
+    <script>
+    var a,b;
+      var myarr = [];
+   
+       a=prompt("enter the length of array");
+     
+       for(var i=0;i<a;i++)
+       {
+          b=prompt("entre the array elements");
+           myarr.push(parseInt(b));
+       }  
+     
+       document.write("array elements before sorting :"+myarr+"<br>");
+
+      function quicksort(originalarray){
+          if(originalarray.length<=1){
+              return originalarray;
+          }
+          else{
+            var left = [],right = [],newarr = [];
+
+          var pivot =  originalarray.pop();
+              for (var j=0;j<originalarray.length;j++)
+              {
+                  if(originalarray[j] <= pivot){
+                      left.push(originalarray[j]);
+                      console.log(left);
+                  }
+                  else{
+                      right.push(originalarray[j]);
+                      console.log(right);   
+                  }
+              }
+              return newarr.concat(quicksort(left), pivot, quicksort(right));
+          }
+      }
+   
+ 
+       
+
+
+       var x = quicksort(myarr);
+        document.write("sorted array"+x);
+    </script>
+
+</body>
+</html>
