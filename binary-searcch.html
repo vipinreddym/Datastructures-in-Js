@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Binary search</title>
+</head>
+<body>
+    <script>
+    var a,b,m,p=0;
+    var myarr = [];
+    a=prompt("enter the length of the array");
+    for (var i=0;i<a;i++)
+    {
+        b=prompt("enter the array elements");
+        myarr.push(parseInt(b));
+    }
+    
+    document.write("array elements:"+myarr+"<br>");
+    for(var i=0;i<myarr.length;i++)
+        {
+            for(var j=i+1;j<myarr.length;j++)
+            {
+            if(myarr[i]>myarr[j])
+                {
+                var t=myarr[i];
+                myarr[i]=myarr[j];
+                myarr[j]=t;
+                }
+            }
+        }
+        console.log(myarr);
+        var k=parseInt(prompt("enter the element to find"));
+                var i=0;
+        var u=parseInt(myarr.length-1);
+        while(i<=u)
+        {
+             m=parseInt((i+u)/2);
+            if(k==myarr[m])
+            {
+                p=1;
+                break;
+            }
+            else if(k>myarr[m])
+            {
+            i=m+1;
+            }
+            else if(k<myarr[m])
+            {
+             u=m-1;
+            }
+        }
+    if(p==1)
+        document.writeln("element found at :"+m);
+    else
+        document.writeln("element not found");
+ 
+    
+
+    </script>
+</body>
+</html>
