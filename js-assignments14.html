@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>power</title>
+</head>
+<body>
+    <script>
+    var x=prompt("enter a base value");
+    var y=prompt("enter a power value");
+    document.write(powerfun(x,y));
+    function powerfun(x,y){
+        var a=1;
+        for(var i=0;i<y;i++){
+            a=x*a;
+        }
+        return a;
+    }
+    </script>
+</body>
+</html>

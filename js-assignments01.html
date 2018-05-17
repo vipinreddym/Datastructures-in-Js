@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reverse number</title>
+</head>
+<body>
+    <script>
+    var n,rev=0,a;
+    n=prompt("enter a number");
+    while(n>0){
+        a=n%10;
+        n=parseInt(n/10);
+        rev=(rev*10)+a;
+    }
+    
+    document.write(rev);
+    
+    </script>
+</body>
+</html>

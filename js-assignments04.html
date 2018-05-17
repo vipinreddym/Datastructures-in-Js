@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ASCII value</title>
+</head>
+<body>
+    <script>
+     var x=prompt("enter a word");
+     
+     function sort(word)
+     {
+         var chars=[];
+         for(var i=0;i<word.length;i++){
+             chars.push(word.charCodeAt(i));
+         }
+         var sorted=[];
+         for(var i=0;i<word.length;i++){
+             var lowest = Math.min(...chars);
+             sorted.push(lowest);
+             chars.splice(chars.indexOf(lowest), 1)
+         }
+         var sortedString='';
+         for(var i=0;i<sorted.length;i++){
+            sortedString +=String.fromCharCode(sorted[i]);
+         }
+    document.write (sortedString);
+     }
+     sort(x);
+    </script>
+
+</body>
+</html>

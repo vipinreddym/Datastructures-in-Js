@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>perfectnumber</title>
+</head>
+<body>
+    <script>
+    var x=prompt("enter a number you want");
+    var count = 0;
+    for (var i=0;i<x;i++){
+        if(x%i==0){
+            count = count+i;
+        }
+
+    }
+    if(count==x){
+        document.write("given number is perfect number");
+    }
+    else{
+        document.write("given number is not a perfect number");
+    }
+    </script>
+</body>
+</html>

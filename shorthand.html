@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    //ternary operator
+    var x = 10;
+    var y = x>5 ? 'greater than 5' : 'less than 5';
+    console.log(y);
+    //undefined variable and short hand
+    var variable1,variable2;
+    if (variable1 !== null || variable1 !== undefined || variable1 !== '') {
+     let variable2 = variable1;
+    console.log(variable2);
+}
+    // short hand
+    var a;
+    var b=a;
+    console.log(b);
+    //decclaring variabels 
+    var a=4,b=5,c,d,g;
+    //if not null statement and true
+    if(x==true)
+    if(x)
+
+    if(x!==true)
+    if(!x)  {}
+    //array notation
+        var a=['vipin','raju','kumar'];
+    //js for loop
+    for (var i=0;i<a.length;i++){
+
+    }
+    var arr=['vipin','raju','kumar'];
+    for (let i of  arr ){
+        console.log(i)
+    }
+    var m,n;
+
+    if(n)
+    {
+        m=n;
+        console.log(m)
+    }
+    else
+    {
+        m='localhost';
+       // console.log(m);
+    }
+    //function return short hand
+    var g;
+    function vipin(g)
+    { 
+        return Math.PI * g;
+    }
+    console.log(vipin(3));
+        
+    vipin = g  =>(
+        Math.PI * g
+    )
+    console.log(vipin(3));
+
+    //function parametar values
+    function code(av,bn,mk){
+        if(bn === undefined)
+        {
+            bn=3;
+        }
+        if(mk === undefined){
+            mk=4;
+        }
+        return av*bn*mk;
+    }
+    console.log(code(3));
+    code1 = (vx,vc=5,nh=4) =>(
+        vx*vc*nh
+    )
+    console.log(code1(3,3,3));
+    //array join
+    var arr = [1,5,8];
+    var arr1 = [12,...arr,86,96];
+    console.log(arr1);
+    </script>
+
+</body>
+</html>

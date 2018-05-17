@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var x=prompt("enter the string");
+    
+    function uppercase(str){
+        var array1=str.split(' ');
+        var myarr= [];
+        for(var i=0;i<array1.length;i++){
+            myarr.push(array1[i].charAt(0).toUpperCase()+array1[i].slice(1));
+
+        }
+        return myarr.join(' ');
+    }
+    console.log(uppercase(x))
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>captalize</title>
+</head>
+<body>
+    <script>
+    var x=prompt("enter a string you want");
+    function unique_char(x) {
+    var unique = '';
+    var count = 0;
+    for (var i = 0; i < x.length; i++) {
+        for (var j = i+1; j < x.length; j++) {
+            if (x[i] == x[j]) {
+                count++;
+                unique += x[i];
+            }
+        }
+    }
+    return unique;
+}
+console.log(unique_char(x))
+    
+    </script>
+</body>
+</html>
